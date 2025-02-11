@@ -20,7 +20,7 @@ final class MainViewModel: ObservableObject {
     func loadRecipes() async {
         print("\(type(of: self)).\(#function)")
         do {
-            try await self.dataManager.fetchRecipeData(with: APIURLs.recipesURL)
+            try await self.dataManager.fetchRecipeData(with: APIURLs.recipesURL) // <-- CHANGE URL ENDPOINT HERE
             self.recipes = self.dataManager.recipes
             print("  _recipes loaded.")
         } catch {

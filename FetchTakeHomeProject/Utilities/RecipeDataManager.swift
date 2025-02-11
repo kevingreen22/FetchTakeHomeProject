@@ -7,15 +7,6 @@
 
 import SwiftUI
 
-/// The 3 endpoints provided.
-struct APIURLs {
-    static let recipesURL = URL(string: "https://d3jbb8n5wk0qxi.cloudfront.net/recipes.json")
-
-    static let malformedDataURL = URL(string: "https://d3jbb8n5wk0qxi.cloudfront.net/recipes-malformed.json")
-    
-    static let emptyDataURL = URL(string: "https://d3jbb8n5wk0qxi.cloudfront.net/recipes-empty.json")
-}
-
 /// A singleton managing the fetching of data from a url.
 class RecipeDataManager {
     
