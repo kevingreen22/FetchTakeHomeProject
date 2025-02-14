@@ -12,7 +12,7 @@ struct HomeView: View {
     @StateObject var vm = HomeViewModel()
     @Environment(\.dismiss) var dismiss
     
-    @State private var headerImage: Image = Image(systemName: "photo")
+    @State private var headerImage: Image = Image(systemName: "")
     @State private var headerText: String = "Day"
     @State private var searchBarOffset: CGFloat = 0
     @State private var searchBarOpacity: CGFloat = 1
@@ -46,7 +46,7 @@ struct HomeView: View {
                 Text("There was a problem getting yummy recipies to make. Try refreshing.")
             }
             
-            .task {             // <-- starting point of data fetch.
+            .task {             // <-- first call of data fetch.
                 setHeaderInfo()
                 await refresh()
             }

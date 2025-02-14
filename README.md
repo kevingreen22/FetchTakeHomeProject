@@ -35,7 +35,7 @@
 
     I chose the MVVM achitecture as this is what I'm comfortable with and to show you how I like to structure my apps.
 
-    I also chose to use a UI that I previously created, modeled off of one of my favorites, just to show what I'm capable of. So I integrated that UI into this project as best I could without totally tweaking a bunch of things. It was made with iOS 18 so theres a couple of small things that won't work. i.e. scroll clipping, deeper navigation, etc. Moreover, I've left the original ContentView.swift that I used to get the app working before integration of my custom favorite. I have put the files specific for this project in a separate folder than my custom UI for your ease of viewing the crux.
+    I also chose to use a UI that I previously created, modeled off of one of my favorites, just to show what I'm capable of. So I integrated that UI into this project as best I could without totally tweaking a bunch of things. It was made with iOS 18 so theres a couple of small things that won't work. i.e. scroll clipping, deeper navigation, card loading view, etc. Moreover, I've left the original ContentView.swift that I used to get the app working before integration of my custom favorite. I have put the files specific for this project in a separate folder than my custom UI for your ease of viewing the crux.
 
     The use of URLSession configuration documentations suggests automatic caching so I explicitly used the ephemeral configuration. This will help the app to not store dupicate caches and also show you my attention to detail and documentation.
 
